@@ -52,7 +52,7 @@ final class LiftAndEscalatorServiceTest extends TestCase
         $client = $this->prophesize(Client::class);
 
         $client->get(
-            'api/v2/sensors?num=500&offset=100',
+            'api/v2/sensors/1234',
             [
                 RequestOptions::HEADERS => [
                     'Authorisation' => 'Bearer token'
@@ -61,7 +61,7 @@ final class LiftAndEscalatorServiceTest extends TestCase
 
         $service = new LiftAndEscalatorService($client->reveal());
 
-        $service->getSensors('token', 500, 100);
+        $service->getSensorInfoById(1234, 'token');
     }
 
     public function testGetAssetInfoByIdHitsCorrectEndpoint(): void
