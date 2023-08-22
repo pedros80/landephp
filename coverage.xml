@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1692741828">
-  <project timestamp="1692741828">
+<coverage generated="1692742100">
+  <project timestamp="1692742100">
     <file name="/home/runner/work/landephp/landephp/src/Exceptions/CouldNotGenerateToken.php">
       <class name="Pedros80\LANDEphp\Exceptions\CouldNotGenerateToken" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
@@ -39,7 +39,7 @@
     </file>
     <file name="/home/runner/work/landephp/landephp/src/Services/LiftAndEscalatorService.php">
       <class name="Pedros80\LANDEphp\Services\LiftAndEscalatorService" namespace="global">
-        <metrics complexity="7" methods="7" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="25" elements="33" coveredelements="31"/>
+        <metrics complexity="7" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="33" coveredelements="33"/>
       </class>
       <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="6"/>
       <line num="14" type="stmt" count="6"/>
@@ -53,10 +53,10 @@
       <line num="69" type="stmt" count="1"/>
       <line num="71" type="stmt" count="1"/>
       <line num="73" type="stmt" count="1"/>
-      <line num="76" type="method" name="getSensors" visibility="public" complexity="1" crap="1" count="3"/>
-      <line num="78" type="stmt" count="3"/>
-      <line num="81" type="method" name="getSensorInfoById" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="83" type="stmt" count="0"/>
+      <line num="76" type="method" name="getSensors" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="78" type="stmt" count="2"/>
+      <line num="81" type="method" name="getSensorInfoById" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="83" type="stmt" count="1"/>
       <line num="86" type="method" name="get" visibility="private" complexity="1" crap="1" count="3"/>
       <line num="88" type="stmt" count="3"/>
       <line num="89" type="stmt" count="3"/>
@@ -74,7 +74,7 @@
       <line num="105" type="stmt" count="2"/>
       <line num="106" type="stmt" count="2"/>
       <line num="108" type="stmt" count="2"/>
-      <metrics loc="111" ncloc="111" classes="1" methods="7" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="25" elements="33" coveredelements="31"/>
+      <metrics loc="111" ncloc="111" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="33" coveredelements="33"/>
     </file>
     <file name="/home/runner/work/landephp/landephp/src/Services/TokenGenerator.php">
       <class name="Pedros80\LANDEphp\Services\TokenGenerator" namespace="global">
@@ -96,6 +96,6 @@
       <line num="36" type="stmt" count="1"/>
       <metrics loc="39" ncloc="39" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="14" coveredelements="14"/>
     </file>
-    <metrics files="4" loc="210" ncloc="209" classes="3" methods="12" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="59" coveredstatements="58" elements="71" coveredelements="69"/>
+    <metrics files="4" loc="210" ncloc="209" classes="3" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="59" coveredstatements="59" elements="71" coveredelements="71"/>
   </project>
 </coverage>
