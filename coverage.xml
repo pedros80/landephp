@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1692740437">
+  <project timestamp="1692740437">
+    <file name="/home/runner/work/landephp/landephp/src/Exceptions/CouldNotGenerateToken.php">
+      <class name="Pedros80\LANDEphp\Exceptions\CouldNotGenerateToken" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="13" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/runner/work/landephp/landephp/src/Factories/ServicesFactory.php">
+      <class name="Pedros80\LANDEphp\Factories\ServicesFactory" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="24" coveredelements="24"/>
+      </class>
+      <line num="17" type="method" name="makeTokenGenerator" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="19" type="stmt" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="21" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="28" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="32" type="method" name="makeLiftAndEscalatorService" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="1"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="38" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <line num="40" type="stmt" count="1"/>
+      <line num="41" type="stmt" count="1"/>
+      <line num="42" type="stmt" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <line num="44" type="stmt" count="1"/>
+      <metrics loc="47" ncloc="47" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="24" coveredelements="24"/>
+    </file>
+    <file name="/home/runner/work/landephp/landephp/src/Services/LiftAndEscalatorService.php">
+      <class name="Pedros80\LANDEphp\Services\LiftAndEscalatorService" namespace="global">
+        <metrics complexity="7" methods="7" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="25" elements="33" coveredelements="31"/>
+      </class>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="14" type="stmt" count="6"/>
+      <line num="16" type="method" name="getAssetsByStationCode" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="18" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <line num="41" type="stmt" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <line num="46" type="method" name="getAssetInfoById" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="69" type="stmt" count="1"/>
+      <line num="71" type="stmt" count="1"/>
+      <line num="73" type="stmt" count="1"/>
+      <line num="76" type="method" name="getSensors" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="78" type="stmt" count="3"/>
+      <line num="81" type="method" name="getSensorInfoById" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="83" type="stmt" count="0"/>
+      <line num="86" type="method" name="get" visibility="private" complexity="1" crap="1" count="3"/>
+      <line num="88" type="stmt" count="3"/>
+      <line num="89" type="stmt" count="3"/>
+      <line num="90" type="stmt" count="3"/>
+      <line num="91" type="stmt" count="3"/>
+      <line num="92" type="stmt" count="3"/>
+      <line num="94" type="stmt" count="3"/>
+      <line num="97" type="method" name="post" visibility="private" complexity="1" crap="1" count="2"/>
+      <line num="99" type="stmt" count="2"/>
+      <line num="100" type="stmt" count="2"/>
+      <line num="101" type="stmt" count="2"/>
+      <line num="102" type="stmt" count="2"/>
+      <line num="103" type="stmt" count="2"/>
+      <line num="104" type="stmt" count="2"/>
+      <line num="105" type="stmt" count="2"/>
+      <line num="106" type="stmt" count="2"/>
+      <line num="108" type="stmt" count="2"/>
+      <metrics loc="111" ncloc="111" classes="1" methods="7" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="25" elements="33" coveredelements="31"/>
+    </file>
+    <file name="/home/runner/work/landephp/landephp/src/Services/TokenGenerator.php">
+      <class name="Pedros80\LANDEphp\Services\TokenGenerator" namespace="global">
+        <metrics complexity="4" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="1" elements="14" coveredelements="2"/>
+      </class>
+      <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="15" type="stmt" count="1"/>
+      <line num="17" type="method" name="getToken" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="30" type="method" name="parseToken" visibility="private" complexity="1" crap="2" count="0"/>
+      <line num="32" type="stmt" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="36" type="stmt" count="0"/>
+      <metrics loc="39" ncloc="39" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="1" elements="14" coveredelements="2"/>
+    </file>
+    <metrics files="4" loc="210" ncloc="209" classes="3" methods="12" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="59" coveredstatements="48" elements="71" coveredelements="57"/>
+  </project>
+</coverage>
