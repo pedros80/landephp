@@ -4,9 +4,10 @@ namespace Pedros80\LANDEphp\Services;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
+use Pedros80\LANDEphp\Contracts\LiftsAndEscalators;
 use stdClass;
 
-final class LiftAndEscalatorService
+final class LiftAndEscalatorService implements LiftsAndEscalators
 {
     public function __construct(
         private Client $client

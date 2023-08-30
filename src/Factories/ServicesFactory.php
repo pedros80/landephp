@@ -4,6 +4,7 @@ namespace Pedros80\LANDEphp\Factories;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
+use Pedros80\LANDEphp\Contracts\LiftsAndEscalators;
 use Pedros80\LANDEphp\Services\LiftAndEscalatorService;
 use Pedros80\LANDEphp\Services\TokenGenerator;
 
@@ -29,7 +30,7 @@ final class ServicesFactory
         );
     }
 
-    public function makeLiftAndEscalatorService(string $apiKey): LiftAndEscalatorService
+    public function makeLiftAndEscalatorService(string $apiKey): LiftsAndEscalators
     {
         return new LiftAndEscalatorService(
             new Client([
