@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1693423635">
-  <project timestamp="1693423635">
+<coverage generated="1693523193">
+  <project timestamp="1693523193">
     <file name="/home/runner/work/landephp/landephp/src/Contracts/LiftsAndEscalators.php">
       <metrics loc="13" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/runner/work/landephp/landephp/src/Contracts/Tokens.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <file name="/home/runner/work/landephp/landephp/src/Exceptions/CouldNotGenerateToken.php">
       <class name="Pedros80\LANDEphp\Exceptions\CouldNotGenerateToken" namespace="global">
@@ -83,22 +86,22 @@
       <class name="Pedros80\LANDEphp\Services\TokenGenerator" namespace="global">
         <metrics complexity="4" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="14" coveredelements="14"/>
       </class>
-      <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="3"/>
-      <line num="15" type="stmt" count="3"/>
-      <line num="17" type="method" name="getToken" visibility="public" complexity="2" crap="2" count="2"/>
-      <line num="20" type="stmt" count="2"/>
-      <line num="22" type="stmt" count="1"/>
-      <line num="24" type="stmt" count="1"/>
+      <line num="13" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="16" type="stmt" count="3"/>
+      <line num="18" type="method" name="getToken" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="21" type="stmt" count="2"/>
+      <line num="23" type="stmt" count="1"/>
       <line num="25" type="stmt" count="1"/>
       <line num="26" type="stmt" count="1"/>
-      <line num="30" type="method" name="parseToken" visibility="private" complexity="1" crap="1" count="1"/>
-      <line num="32" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="31" type="method" name="parseToken" visibility="private" complexity="1" crap="1" count="1"/>
       <line num="33" type="stmt" count="1"/>
       <line num="34" type="stmt" count="1"/>
       <line num="35" type="stmt" count="1"/>
       <line num="36" type="stmt" count="1"/>
-      <metrics loc="39" ncloc="39" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="14" coveredelements="14"/>
+      <line num="37" type="stmt" count="1"/>
+      <metrics loc="40" ncloc="40" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="14" coveredelements="14"/>
     </file>
-    <metrics files="5" loc="225" ncloc="224" classes="3" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="59" coveredstatements="59" elements="71" coveredelements="71"/>
+    <metrics files="6" loc="235" ncloc="234" classes="3" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="59" coveredstatements="59" elements="71" coveredelements="71"/>
   </project>
 </coverage>
