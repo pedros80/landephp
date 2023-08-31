@@ -3,11 +3,12 @@
 namespace Pedros80\LANDEphp\Services;
 
 use GuzzleHttp\Client;
+use Pedros80\LANDEphp\Contracts\Tokens;
 use Pedros80\LANDEphp\Exceptions\CouldNotGenerateToken;
 use stdClass;
 use Throwable;
 
-final class TokenGenerator
+final class TokenGenerator implements Tokens
 {
     public function __construct(
         private Client $client
