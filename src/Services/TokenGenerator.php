@@ -5,6 +5,7 @@ namespace Pedros80\LANDEphp\Services;
 use GuzzleHttp\Client;
 use Pedros80\LANDEphp\Contracts\Tokens;
 use Pedros80\LANDEphp\Exceptions\CouldNotGenerateToken;
+use Pedros80\LANDEphp\Exceptions\InvalidTokenResponse;
 use stdClass;
 use Throwable;
 
@@ -20,20 +21,28 @@ final class TokenGenerator implements Tokens
         try {
             $response = $this->client->post('');
 
-            $data = json_decode((string) $response->getBody());
+            /** @var stdClass $body */
+            $body = json_decode((string) $response->getBody(), false);
 
-            return $this->parseToken($data);
+            if (!is_object($body)) {
+                throw InvalidTokenResponse::new();
+            }
+
+            return $this->parseToken($body);
         } catch (Throwable $e) {
             throw new CouldNotGenerateToken($e->getMessage());
         }
     }
 
-    private function parseToken(stdClass $data): array
+    /**
+     * @return array<string, string>
+     */
+    private function parseToken(stdClass $body): array
     {
         return [
-            'user'    => $data->user_id,
-            'expires' => date('Y-m-d H:i:s', (int) strtotime("+ {$data->expires_in} seconds")),
-            'token'   => $data->access_token,
+            'user'    => $body->user_id,
+            'expires' => date('Y-m-d H:i:s', (int) strtotime("+ {$body->expires_in} seconds")),
+            'token'   => $body->access_token,
         ];
     }
 }

@@ -6,6 +6,7 @@ use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 use Pedros80\LANDEphp\Exceptions\CouldNotGenerateToken;
+use Pedros80\LANDEphp\Exceptions\InvalidTokenResponse;
 use Pedros80\LANDEphp\Services\TokenGenerator;
 use PHPUnit\Framework\TestCase;
 use Prophecy\PhpUnit\ProphecyTrait;
@@ -22,6 +23,22 @@ final class TokenGeneratorTest extends TestCase
         $client = $this->prophesize(Client::class);
 
         $client->post('')->shouldBeCalled()->willThrow(new Exception('Something Wrong...'));
+
+        $service = new TokenGenerator(
+            $client->reveal()
+        );
+
+        $service->getToken();
+    }
+
+    public function testTokenGeneratorReturnsInvalidJsonThrowsException(): void
+    {
+        $this->expectException(CouldNotGenerateToken::class);
+        $this->expectExceptionMessage('Invalid Token Response - could not decode to object');
+
+        $client = $this->prophesize(Client::class);
+
+        $client->post('')->shouldBeCalled()->willReturn(new Response(200, [], 'invalid-json'));
 
         $service = new TokenGenerator(
             $client->reveal()

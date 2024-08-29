@@ -5,6 +5,7 @@ namespace Pedros80\LANDEphp\Services;
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
 use Pedros80\LANDEphp\Contracts\LiftsAndEscalators;
+use Pedros80\LANDEphp\Exceptions\InvalidServiceResponse;
 use stdClass;
 
 final class LiftAndEscalatorService implements LiftsAndEscalators
@@ -92,7 +93,14 @@ final class LiftAndEscalatorService implements LiftsAndEscalators
             ],
         ]);
 
-        return json_decode($response->getBody());
+        /** @var stdClass $data */
+        $data = json_decode($response->getBody(), false);
+
+        if (!is_object($data)) {
+            throw InvalidServiceResponse::new();
+        }
+
+        return $data;
     }
 
     private function post(string $query, string $token): stdClass
@@ -106,6 +114,13 @@ final class LiftAndEscalatorService implements LiftsAndEscalators
             ],
         ]);
 
-        return json_decode($response->getBody());
+        /** @var stdClass $data */
+        $data = json_decode($response->getBody(), false);
+
+        if (!is_object($data)) {
+            throw InvalidServiceResponse::new();
+        }
+
+        return $data;
     }
 }
